@@ -8,7 +8,6 @@ plugins {
 
 android {
 
-    /*
     publishing {
         singleVariant("release") {
             // if you don't want sources/javadoc, remove these lines
@@ -16,13 +15,12 @@ android {
             withJavadocJar()
         }
     }
-     */
 
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         minSdk 21
-        targetSdk 33
+        targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -45,12 +43,11 @@ android {
         viewBinding true
     }
 
-
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
 
     implementation("androidx.dynamicanimation:dynamicanimation:1.0.0")
